@@ -60,3 +60,62 @@ h3 {
   z-index: 1;
   margin: 0;
 }
+
+/* s2 */
+
+.s2 {
+  position: relative;
+  background-color: #FFF;
+}
+.s2 > h3 {
+  color: #262626;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wave {
+  color: #FFF;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50px;
+}
+
+.wave:before,
+.wave:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  border: 3px solid orange;
+  width: inherit;
+  height: inherit;
+  box-sizing: border-box;
+  border-radius: 50%;
+  opacity: 0;
+  animation: ani 1s linear infinite;
+}
+.wave:after {
+  animation-delay: 0.5s;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+}
