@@ -183,3 +183,30 @@ ul.nav li a span {
 ul.nav li a:hover span {
   transform: translateY(-100%);
 }
+
+/* sec-4 */
+
+.sec-4 {
+  position: relative;
+  background-color: #fff;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tooltip i {
+  color: dodgerblue;
+  font-size: 70px;
+}
+.tooltip-text {
+  opacity: 0;
+
+}
+
+.sec-4 h3 {
+  color: #000;
+}
