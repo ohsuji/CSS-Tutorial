@@ -15,6 +15,9 @@ h3 {
   color: #FFF;
   margin-bottom: 100px;
 }
+.sec-1 {
+  position: relative;
+}
 
 .hexagon {
   position: absolute;
@@ -61,13 +64,13 @@ h3 {
   margin: 0;
 }
 
-/* s2 */
+/* sec-2 */
 
-.s2 {
+.sec-2 {
   position: relative;
   background-color: #FFF;
 }
-.s2 > h3 {
+.sec-2 > h3 {
   color: #262626;
 }
 
@@ -119,3 +122,29 @@ h3 {
     transform: scale(1.7);
   }
 }
+
+/* sec-3 */
+
+.sec-3 {
+  position: relative;
+  height: 100vh;
+}
+
+ul.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  margin: 0;
+  padding: 10px 0 0 0;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+ul.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
