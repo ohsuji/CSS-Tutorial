@@ -160,7 +160,7 @@ ul.nav li a {
   margin: 0 12px;
 }
 
-ul.nav li a:hover:before {
+ul.nav li a:before {
   position: absolute;
   content: attr(data-link-alt);
   top: 100%;
@@ -169,14 +169,14 @@ ul.nav li a:hover:before {
   transition: 0.5s;
 }
 
-ul.nav li a:hover {
+ul.nav li a:hover:before {
   opacity: 1;
   top: 0;
 }
 
 ul.nav li a span {
   display: block;
-  color: #000;
+  color: #262626;
   transition: 0.5s;
 }
 
