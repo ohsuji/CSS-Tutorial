@@ -5,3 +5,6 @@
 3. Text Nav
 4. Tooltip Text
 5. Hover Text Effect
+6. Image Hover Scale
+7. Tab Menu
+8. Accordion Menu
