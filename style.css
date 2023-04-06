@@ -368,5 +368,114 @@ ul.nav li a:hover span {
 }
 
 .image-box:hover > img {
-  transform: scale(1.1);
+  transform: scale(1.01);
+}
+
+/* sec-7 */
+
+.sec-7 {
+  position: relative;
+  background-color: #fff;
+}
+
+.tab-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #ccc;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  background: #aaa;
+  color: #000;
+}
+
+.detail-content {
+  display: none;
+  width: 500px;
+  height: 300px;
+  padding: 40px;
+  background-color: #aaa;
+}
+
+input[id="tab-01"]:checked ~ .con-01 {
+  display: block;
+}
+
+input[id="tab-02"]:checked ~ .con-02 {
+  display: block;
+}
+
+input[id="tab-03"]:checked ~ .con-03 {
+  display: block;
+}
+
+.sec-7 > h3 {
+  color: #262626;
+}
+
+/* sec-8 */
+
+.sec-8 {
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #aaa;
+}
+
+.accordion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[id*="answer"] {
+  display: none;
+}
+
+input[id*="answer"] + label {
+  display: block;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #232188;
+  border-bottom: 0;
+  color: #fff;
+  background-color: #3634a5;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+input[id*="answer"] + label em {
+  
+}
+
+input[id*="answer"] + label + div {
+  max-height: 0;
+  transition: all .35s;
+  overflow: hidden;
+  font-size: 11px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+input[id*="answer"] + label + div ul {
+  display: inline-block;
+  padding: 20px;
+  color: #ccc;
+}
+
+input[id*="answer"]:checked + label + div {
+  max-height: 100px;
 }
